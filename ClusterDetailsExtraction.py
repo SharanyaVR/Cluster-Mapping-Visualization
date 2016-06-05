@@ -3,19 +3,19 @@ import operator
 import numpy as np
 import json
 import os
-import glob
+from sys import argv
 
+'''
+Example:
 pathtoclustermappingfiles = "/home/sharanyavraju/PycharmProjects/Cluster-Mapping-Visualization/ClusterMappingFiles/"
 pathtoClusterDetailFiles = "/home/sharanyavraju/PycharmProjects/Cluster-Mapping-Visualization/ClusterDetailFiles"
 pathtoNodeIdandClusterIdMappingFiles = "/home/sharanyavraju/PycharmProjects/Cluster-Mapping-Visualization/NodeIdandClusterIdMapping"
-listofdirectorypaths = [pathtoclustermappingfiles, pathtoNodeIdandClusterIdMappingFiles, pathtoClusterDetailFiles]
 
-'''
 listofdirectorypaths = [pathtoclustermappingfiles, pathtoNodeIdandClusterIdMappingFiles, pathtoClusterDetailFiles]
-&
-Make sure path ends with '/'
 '''
-listofdirectorypaths = [pathtoclustermappingfiles, pathtoNodeIdandClusterIdMappingFiles, pathtoClusterDetailFiles]
+listofdirectorypaths = [argv[1], argv[2], argv[3]]
+
+#Make sure path ends with '/'
 length = len(listofdirectorypaths)
 for i in range(0, length):
     path = listofdirectorypaths[i]
@@ -66,7 +66,6 @@ for EveryClusterDetailFile in listofClusterDetailFiles:
     listofClusterDetailAndIndexFiles.append([listofdirectorypaths[2]+EveryClusterDetailFile, listofdirectorypaths[1]+nodedict.get(nodeName), nodeName[0]])
 
 # print listofClusterDetailAndIndexFiles
-
 IdValueMapping = {}
 DictofPropertyDetails = {}
 
