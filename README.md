@@ -9,11 +9,11 @@ It implements Force-Directed algorithm for the graph.
 #How-to-use
 Input:
 Run the python program and provide as input the paths to the following three directories, respectively:
-D1) Path to directory containing cluster mapping files
+D1) Path to directory that contains files with mapping information between 2 cluster id's of 2 features
   ex: ClusterMappingFiles
-D2) Path to directory that contains files indicating the mapping between every node and its cluster, per feature
+D2) Path to directory that contains files indicating the mapping between every node id and its cluster id, per feature
   ex: NodeIdandClusterIdMapping 
-D3) Path to directory that contains files detailing every node id with the values
+D3) Path to directory that contains files detailing every node id with the node's value
   ex: FeatureDetails
 
 Output:
