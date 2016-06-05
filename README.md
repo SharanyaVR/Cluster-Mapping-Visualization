@@ -1,5 +1,5 @@
 # Cluster-Mapping-Visualization
-This project aims at visualizing the relations between different feature clusters.
+This project aims at visualizing the relations between different feature clusters. 
 
 Lot of times, we have multiple features and their individual clusters.
 This visualization is a great way to visually analyze the co-relation between different feature clusters.
@@ -8,7 +8,7 @@ It implements Force-Directed algorithm for the graph.
 
 #How-to-use
 Input:
-Run the python program and provide as input the paths to the following three directories, respectively:
+Run the python program and provide as input the paths to the following three directories, respectively:<br/>
 D1) Path to directory that contains files with mapping information between 2 cluster id's of 2 features
   ex: ClusterMappingFiles
 D2) Path to directory that contains files indicating the mapping between every node id and its cluster id, per feature
